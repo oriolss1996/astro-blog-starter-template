@@ -11,6 +11,7 @@ import keystatic from "@keystatic/astro";
 // https://astro.build/config
 export default defineConfig({
 	site: "https://durummixto.com",
+    output: 'server',
 	integrations: [mdx(), sitemap(), react(), keystatic()],
 	adapter: cloudflare({
         imageService: 'passthrough',
