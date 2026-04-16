@@ -16,7 +16,7 @@ export default config({
       format: { contentField: 'content' },
       schema: {
         title: fields.string({ label: 'Título' }),
-        content: fields.markdoc({ label: 'Contenido' }),
+        content: fields.mdx({ label: 'Contenido' }),
       },
     }),
   },
