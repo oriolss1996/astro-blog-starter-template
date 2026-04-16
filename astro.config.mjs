@@ -10,7 +10,7 @@ import keystatic from "@keystatic/astro";
 
 // https://astro.build/config
 export default defineConfig({
-	site: "https://example.com",
+	site: "https://durummixto.com",
 	integrations: [mdx(), sitemap(), react(), keystatic()],
 	adapter: cloudflare({
         imageService: 'passthrough',
