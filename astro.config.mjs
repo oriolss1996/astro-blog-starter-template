@@ -11,10 +11,12 @@ import keystatic from "@keystatic/astro";
 // https://astro.build/config
 export default defineConfig({
 	site: "https://example.com",
-	integrations: [mdx(), sitemap()],
+	output: 'hybrid',
+	integrations: [mdx(), sitemap(), react(), keystatic()],
 	adapter: cloudflare({
-		platformProxy: {
-			enabled: true,
-		},
+        imageService: 'passthrough',
+        platformProxy: {
+            enabled: true,
+        },
 	}),
 });
